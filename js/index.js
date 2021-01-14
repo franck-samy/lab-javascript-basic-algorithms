@@ -1,40 +1,31 @@
-// Iteration 1: Names and Input
-console.log("I'm ready!");
-const hacker1 = "Milena";
+
+//Iteration1 Do it again
+const hacker1 = "Franck";
 console.log(`The driver's name is ${hacker1}`);
-const hacker2 = 'Franck';
+const hacker2 = "Milenna";
 console.log(`The navigator's name is ${hacker2}`);
 
-// Iteration 2: Conditionals
-if(hacker1.length > hacker2.length){
-  console.log(`hacker1 has the longest name with ${hacker1.length} characters`);
-} else if(hacker1.length < hacker2.length) {
-  console.log(`hacker2 has the longest name with ${hacker2.length} characters`);
-} else {
-  console.log (`They both have equality long names, ${hacker1.length} characters`);
+//Iteration2 Do it again
+if (hacker1.lenght > hacker2.lenght){
+  console.log(`The driver has the longest name, it has ${hacker1.lenght} characters.`);
 }
-console.log(hacker1.toUpperCase());
-let hackerUpperCase = hacker1.toUpperCase();
-let upperCase = hackerUpperCase.split("").join(" ");
-console.log(upperCase);
-
-
-
-// Iteration 3: Loops
-let finalString = "";
-for(let i =  0 ; i < hackerUpperCase.length; i++ ){
-  const letter = hackerUpperCase[i];
-  finalString += `${letter} `
+else if (!hacker1.lenght>hacker2.lenght){
+console.log(`It seems that the navigator has the longest name, it has ${hacker2.lenght} characters.`);
+} 
+else (hacker1.lenght==hacker2.lenght){
+  console.log(`wow, you both have equally long names, ${hacker2.lenght} characters!`);
 }
-console.log(finalString);
 
-let reverse = hacker2.split("").reverse("").join("");
-console.log(reverse);
+//Iteration 3 Do it again
+let upperHacker1 = hacker1.upperCase();
+let driverNameSplit = upperHacker1.split("").join(" ");
+console.log(driverNameSplit);
 
-if (hacker1 > hacker2){
+let reverseNavName = hacker2.split("").reverse().join("");
+console.log(reverseNavName);
+
+if (hacker1>hacker2){
   console.log("The driver's name goes first");
-}else  if (hacker2 > hacker1){
-  console.log("Yo, the navigator goes first definitely.");
-} else {
-  console.log("What?! You both have the same name?");
-}
+} else if (!hacker1>hacker2){
+  console.log("Yo, the navigator goes first definitely");
+} else {console.log ("What?! You both have the same name?");}
